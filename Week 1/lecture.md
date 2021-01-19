@@ -21,7 +21,7 @@ HTML is human readable. You don't need an interpreter to understand it.
 There're 3 technologies that drive web.
 
 * HTML provides the structure of the document *without* telling anything about how it visually looks or how it behaves
-* CSS provides style of the document
+* CSS provides style of the document`
 * Javascript provides behavior, functionality.
 
 ### HTML History
@@ -81,7 +81,7 @@ is used to provide some infromation about the page. For example it's always a go
 
     <meta charset="utf-8">
 
-<meta> is a stand-alone tag, there's no closing tag.
+`<meta>` is a stand-alone tag, there's no closing tag.
 
     <title></title>
 
@@ -215,4 +215,3 @@ Dispaling images:
 It's always a good idea to include `width` and `height` elements. In this case a browser would reserve space for the image.
 
 `<img>` is an inline element by default
-
