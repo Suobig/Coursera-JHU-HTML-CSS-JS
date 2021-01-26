@@ -169,6 +169,39 @@ Relative positioning - positioned relative to its normal document flow. Relative
 
 All offsets are relative to the positioning of the nearest ancestor  that has non-static positioning.
 
+`<html>` element has its position set to `relative` by default.
+
 ## Introduction to Responsive Design
+
+### Media queries
+
+Syntax:
+
+    @media (<media feature>) AND|OR (<media feature>) {
+      <set of CSS rules>
+    }
+
+`,` is equivalent to `OR`
+
+Each media feature resolves as `true` or `false` and can be combined by logical operators
+
+Examples of media features:
+
+- `max-width: 800px`
+- `min-width: 300px`
+- `max-height: 500px`
+- `orientation: portrait`
+- `screen`
+- `print`
+
+Be careful to not overlap range boundaries of media features.
+
+### Responsive design
+
+The backbone of almost every responsive website is 12-column grid. Why 12 columns? Because it has a lot of factors: 2, 3, 4, 6.
+
+We can have nested grids - each element has it's own 12-column grid.
+
+
 
 ## Introduction to Twitter Bootstrap
