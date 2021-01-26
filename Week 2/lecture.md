@@ -136,6 +136,39 @@ Box sizing is not intehited. So you should use
 
 Top and bottom margins collapse to the larger maring.
 
+If we won't set the height of the box explicitly, the box will rize accordingly.
+
+If we set the height explicitly, the content that won't fill will spill outside of the box. The property to deal with it is `overflow`. Values:
+- `visilbe`. Default. Spill if doesn't fit
+- `hidden`. Clip if doesn't fit
+- `auto` - scroll if doesn't fit
+- `scroll` - always scroll
+
+Users *hate* double scroll. 
+
+### The background property
+
+- `backround-color` - set as solid color.
+- `background-image: url("<path>")` - set an image by URL. It should be relative to the way the CSS file is served to the browser.
+- `background-repeat`:
+  - `repeat`
+  - `no-repeat`
+- `background position` defaults to `center center`
+- `background url(<url>) <repeat> <position> <color>` - combined property
+
+### Positioning Elements by Floating
+
+`float` - takes element out of the regular document flow. Float element margins never collapse.
+`clear` (`left`, `right`, `both`) - disallows browser to have any floating elements to the left.
+
+### Relative and Absolute Element positioning
+
+Static positioning - normal document flow. Default for all except html.
+22
+Relative positioning - positioned relative to its normal document flow. Relatively positioned element is not taken out of HTML flow. Its position is conserved.
+
+All offsets are relative to the positioning of the nearest ancestor  that has non-static positioning.
+
 ## Introduction to Responsive Design
 
 ## Introduction to Twitter Bootstrap
