@@ -7,7 +7,11 @@
   - [Combining Selectors](#combining-selectors)
   - [Pseudo-Class Selectors](#pseudo-class-selectors)
 - [CSS Rules COnflinct Resolution and Text Styling](#css-rules-conflinct-resolution-and-text-styling)
+  - [Style Placement](#style-placement)
+  - [Conflict Resulution](#conflict-resulution)
+  - [Styling Text](#styling-text)
 - [Text Box Model and Layout](#text-box-model-and-layout)
+  - [The Box Model](#the-box-model)
 - [Introduction to Responsive Design](#introduction-to-responsive-design)
 - [Introduction to Twitter Bootstrap](#introduction-to-twitter-bootstrap)
 
@@ -81,7 +85,56 @@ It's usual to combine `a:link` and `a:visited` selectors.
 
 ## CSS Rules COnflinct Resolution and Text Styling
 
+### Style Placement
+
+Style placement defines not only how reusable those styles are, but also what styles will be applied.
+
+### Conflict Resulution
+
+Cascading is the core feature of CSS. It's and algorithm that defines which rule will be applied to each element.
+
+Some concepts related to cascading algorithm:
+
+- origin - if declarations conflict and there's no  other way to resolve it, the last declaration wins
+- merge - if declarations don't conflict, they merge regardless of their origin.  
+- inheritance - all child elements inherit parent's properties on all levels of inheritance. 
+- specificity - most specific selector wins.
+
+Origin means that "the last declaration wins". For external CSS it's declared where it's linked to the document.
+
+If the declarations don't conflict but the target the same element, they merge.
+
+Specificity score:
+
+- inline style
+- id
+- class, pseudo-class, attribute
+- \# of elements
+
+### Styling Text
+
+font-family - семейство шрифта
+font-style (normal, italic, etc.) - стиль шрифта
+font-weight (100, 200, bold) - жирность
+font-size (24px, 16px etc.) - размер шрифта
+text-transform (lowercase, uppercase, capitalize) - транформация текст
+text-aligh (left, right, center, justify) - положение текста в элементе.
+
+`em` - is a relative style that is equal to the size of the letter 'm' of a parent element.
+
 ## Text Box Model and Layout
+
+### The Box Model
+
+Good idea when creating layout is to change `box-sizing` to be `border-box` instead of default `content-box`.
+
+Box sizing is not intehited. So you should use
+
+    * {
+      box-sizing: border-box; 
+    }
+
+Top and bottom margins collapse to the larger maring.
 
 ## Introduction to Responsive Design
 
